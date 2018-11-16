@@ -10,9 +10,9 @@ plt.xlim(min(x)/10, max(x)*10)
 plt.errorbar(x, y, yerr = yerror)
 plt.hlines(1.50659177, min(x)/10, max(x)*10)
 plt.xscale("log")
-plt.title('convergence of the estimated area of the Madelbrot set in pure random sampling')
-plt.xlabel('sample size')
-plt.ylabel('mean area')
+plt.title('Convergence behavior in pure random sampling')
+plt.xlabel('Sample size')
+plt.ylabel('Mean area')
 plt.show()
 
 #Latin Hypercube sampling
@@ -25,11 +25,11 @@ plt.xlim(min(x)/10, max(x)*10)
 plt.errorbar(x, y, yerr = yerror)
 plt.hlines(1.50659177, min(x)/10, max(x)*10)
 plt.xscale("log")
-plt.title('convergence of the estimated area of the Madelbrot set in Latin Hypercube sampling')
-plt.xlabel('sample size')
-plt.ylabel('mean area')
+plt.title('Convergence behavior in latin hypercube sampling')
+plt.xlabel('Sample size')
+plt.ylabel('Mean area')
 plt.show()
-
+"""
 plt.xlim(min(x)/10, max(x)*10)
 plt.bar(x, yacc, width = 10)
 plt.xscale("log")
@@ -37,7 +37,7 @@ plt.title('TARGET accuracy of the estimated area of the Madelbrot set in Latin H
 plt.xlabel('sample size')
 plt.ylabel('accuracy')
 plt.show()
-
+"""
 #Orthogonal sampling
 y = [1.32, 1.536, 1.5155999999999998, 1.50836, 1.5121200000000001, 1.5105792]
 x = [10, 100, 1000, 10000, 100000, 1000000]
@@ -48,9 +48,9 @@ plt.xlim(min(x)/10, max(x)*10)
 plt.errorbar(x, y, yerr = yerror)
 plt.hlines(1.50659177, min(x)/10, max(x)*10)
 plt.xscale("log")
-plt.title('convergence of the estimated area of the Madelbrot set in Orthogonal sampling sampling')
-plt.xlabel('sample size')
-plt.ylabel('mean area')
+plt.title('Convergence behavior in orthogonal sampling sampling')
+plt.xlabel('Sample size')
+plt.ylabel('Mean area')
 plt.show()
 
 #Importance sampling
@@ -63,12 +63,12 @@ plt.xlim(min(x)/10, max(x)*10)
 plt.errorbar(x, y, yerr = yerror)
 plt.hlines(1.50659177, min(x)/10, max(x)*10)
 plt.xscale("log")
-plt.title('convergence of the estimated area of the Madelbrot set in Importance sampling')
-plt.xlabel('sample size')
-plt.ylabel('mean area')
+plt.title('Convergence behavior in importance sampling')
+plt.xlabel('Sample size')
+plt.ylabel('Mean area')
 plt.show()
 
-
+"""
 # Hybrid figure
 yRandom = [1.44, 1.624, 1.49, 1.52016, 1.508404, 1.508404]
 xRandom = [10, 100, 1000, 10000, 100000,1000000]
@@ -94,3 +94,4 @@ plt.title('convergence of the estimated area of the Madelbrot set')
 plt.xlabel('sample size')
 plt.ylabel('mean area')
 plt.show()
+"""
